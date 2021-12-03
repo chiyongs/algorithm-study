@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class 특정문자뒤집기1_04 {
+public class 단어뒤집기1_04 {
     public ArrayList<String> solution(int n, String[] str) {
         ArrayList<String> answer = new ArrayList<>();
 //        for (String s : str) {
@@ -26,7 +26,7 @@ public class 특정문자뒤집기1_04 {
     }
 
     public static void main(String[] args) {
-        특정문자뒤집기1_04 T = new 특정문자뒤집기1_04();
+        단어뒤집기1_04 T = new 단어뒤집기1_04();
         Scanner kb = new Scanner(System.in);
         int n = kb.nextInt();
         String[] str = new String[n];

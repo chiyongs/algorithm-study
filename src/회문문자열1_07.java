@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class 회문문자열1_07 {
     public String solution(String str) {
         String answer="";
         StringBuilder s = new StringBuilder(str.toLowerCase()).reverse();
@@ -18,5 +18,4 @@ public class Main {
         String str = kb.next();
         System.out.println(T.solution(str));
     }
-
 }
