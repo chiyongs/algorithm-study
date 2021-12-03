@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class 가장짧은문자거리1_10 {
     public int[] solution(String s, char c) {
         /*
         int[] n = new int[s.length()];
@@ -50,7 +50,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main T = new Main();
+        가장짧은문자거리1_10 T = new 가장짧은문자거리1_10();
         Scanner kb = new Scanner(System.in);
         String str = kb.next();
         char c = kb.next().charAt(0);
@@ -58,5 +58,4 @@ public class Main {
             System.out.print(n+" ");
         }
     }
-
 }

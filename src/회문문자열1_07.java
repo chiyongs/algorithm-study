@@ -13,7 +13,7 @@ public class 회문문자열1_07 {
     }
 
     public static void main(String[] args) {
-        Main T = new Main();
+        회문문자열1_07 T = new 회문문자열1_07();
         Scanner kb = new Scanner(System.in);
         String str = kb.next();
         System.out.println(T.solution(str));
