@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class 암호1_12 {
     public String solution(int n, String str) {
 //        String answer = "";
 //        str = str.replace("#", "1");
@@ -27,11 +27,10 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main T = new Main();
+        암호1_12 T = new 암호1_12();
         Scanner kb = new Scanner(System.in);
         int n = kb.nextInt();
         String str = kb.next();
         System.out.println(T.solution(n, str));
     }
-
 }
