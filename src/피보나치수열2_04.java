@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class 피보나치수열2_04 {
     public int[] solution(int n) {
         int[] answer = new int[n];
         answer[0] = 1;
@@ -12,12 +12,11 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main T = new Main();
+        피보나치수열2_04 T = new 피보나치수열2_04();
         Scanner kb = new Scanner(System.in);
         int n = kb.nextInt();
         for(int x : T.solution(n)) {
             System.out.print(x+" ");
         }
     }
-
 }
