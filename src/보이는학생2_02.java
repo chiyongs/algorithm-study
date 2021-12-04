@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class 보이는학생2_02 {
     public int solution(int n, int[] num) {
         int answer = 1;
         int m = num[0];
@@ -14,7 +14,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main T = new Main();
+        보이는학생2_02 T = new 보이는학생2_02();
         Scanner kb = new Scanner(System.in);
         int n = kb.nextInt();
         int[] num = new int[n];
@@ -23,5 +23,4 @@ public class Main {
         }
         System.out.println(T.solution(n, num));
     }
-
 }
