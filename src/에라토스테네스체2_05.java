@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class 에라토스테네스체2_05 {
 	public int solution(int n) {
 		int answer = 0;
 
@@ -19,10 +19,9 @@ public class Main {
 	}
 
 	public static void main(String[] args) {
-		Main T = new Main();
+		에라토스테네스체2_05 T = new 에라토스테네스체2_05();
 		Scanner kb = new Scanner(System.in);
 		int n = kb.nextInt();
 		System.out.println(T.solution(n));
 	}
-
 }
