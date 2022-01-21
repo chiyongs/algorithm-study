@@ -3,7 +3,25 @@ import java.util.Scanner;
 public class 특정문자뒤집기1_05 {
     public String solution(String str) {
         String answer="";
-        int lt=0,rt=str.length()-1;
+//        String answer="";
+//		char[] ch = str.toCharArray();
+//		int lt = 0;
+//		int rt = ch.length-1;
+//		while(lt<rt) {
+//			if(!Character.isAlphabetic(ch[lt])) {
+//				lt++;
+//			}
+//			if(!Character.isAlphabetic(ch[rt])) {
+//				rt--;
+//			}
+//			if(Character.isAlphabetic(ch[lt]) && Character.isAlphabetic(ch[rt])) {
+//				char tmp = ch[lt];
+//				ch[lt] = ch[rt];
+//				ch[rt] = tmp;
+//				lt++;
+//				rt--;
+//			}			
+//		}
         char[] c = str.toCharArray();
         char[] s = new char[str.length()];
         int j = 0;
@@ -16,6 +34,8 @@ public class 특정문자뒤집기1_05 {
                 c[i] =s[j++];
             }
         }
+        
+        
         answer = String.valueOf(c);
         return answer;
     }
