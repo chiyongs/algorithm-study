@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class 점수계산2_7 {
+public class 점수계산2_07 {
 	public int solution(int n, int[] nums) {
 		int answer=0;
 		int s = 1;
@@ -15,7 +15,7 @@ public class 점수계산2_7 {
 	}
 
 	public static void main(String[] args) {
-		점수계산2_7 T = new 점수계산2_7();
+		점수계산2_07 T = new 점수계산2_07();
 		Scanner kb = new Scanner(System.in);
 		int n = kb.nextInt();
 		int[] nums = new int[n];
