@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
-	
+public class 등수구하기2_8 {
 	public int[] solution(int n, int[] nums) {
 		int[] answer = new int[n];
 				
@@ -20,7 +19,7 @@ public class Main {
 	}
 
 	public static void main(String[] args) {
-		Main T = new Main();
+		등수구하기2_8 T = new 등수구하기2_8();
 		Scanner kb = new Scanner(System.in);
 		int n = kb.nextInt();
 		int[] nums = new int[n];
@@ -31,5 +30,4 @@ public class Main {
 			System.out.print(x+" ");
 		}
 	}
-
 }
