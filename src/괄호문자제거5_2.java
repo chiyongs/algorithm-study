@@ -1,8 +1,7 @@
 import java.util.Scanner;
 import java.util.Stack;
 
-public class Main {
-
+public class 괄호문자제거5_2 {
 	public String solution(String input) {
 		Stack<Character> stack = new Stack<>();
 		String answer = "";
@@ -30,5 +29,4 @@ public class Main {
 
 		System.out.println(T.solution(input));
 	}
-
 }
