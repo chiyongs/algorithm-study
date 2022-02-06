@@ -28,7 +28,7 @@ public class 봉우리2_10 {
 	}
 
 	public static void main(String[] args) {
-		Main T = new Main();
+		봉우리2_10 T = new 봉우리2_10();
 		Scanner kb = new Scanner(System.in);
 		int n = kb.nextInt();
 		int[][] nums = new int[n+2][n+2];

@@ -1,35 +1,44 @@
 import java.util.Scanner;
 
 public class Main {
-	
-	public int[] solution(int n, int[] nums) {
-		int[] answer = new int[n];
+
+	static int top = -1;
+
+	public String solution(String input) {
+		String answer = "NO";
 				
-		for(int i=0;i<n;i++) {
-			answer[i] = 1;
-			for(int j=0;j<n;j++) {
-				if(nums[j]>nums[i]) {
-					
-					answer[i]++;
+		char[] ch = new char[input.length()];
+		for(int i=0;i<input.length();i++) {
+			if(input.charAt(i) == '(') {
+				push(ch, input.charAt(i));
+			} else if(input.charAt(i) == ')') {
+				if(top != -1 && ch[top] == '(') {
+					pop(ch);
+				} else {
+					push(ch, input.charAt(i));
 				}
+
 			}
 		}
-				
-		return answer;
 
+		if(top == -1) return "YES";
+		return answer;
+	}
+
+	public static void push(char[] ch, char x) {
+		ch[++top] = x;
+	}
+
+	public static void pop(char[] ch) {
+		ch[top--] = '0';
 	}
 
 	public static void main(String[] args) {
 		Main T = new Main();
-		Scanner kb = new Scanner(System.in);
-		int n = kb.nextInt();
-		int[] nums = new int[n];
-		for(int i=0;i<n;i++) {
-			nums[i] = kb.nextInt();
-		}
-		for(int x: T.solution(n, nums)) {
-			System.out.print(x+" ");
-		}
+		Scanner sc = new Scanner(System.in);
+		String input = sc.nextLine();
+
+		System.out.println(T.solution(input));
 	}
 
 }
