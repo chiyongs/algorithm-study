@@ -23,7 +23,7 @@ public class 괄호문자제거5_2 {
 
 	
 	public static void main(String[] args) {
-		Main T = new Main();
+		괄호문자제거5_2 T = new 괄호문자제거5_2();
 		Scanner sc = new Scanner(System.in);
 		String input = sc.nextLine();
 

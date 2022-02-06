@@ -32,7 +32,7 @@ public class 올바른괄호5_1 {
     }
 
     public static void main(String[] args) {
-        Main T = new Main();
+    	올바른괄호5_1 T = new 올바른괄호5_1();
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
 
