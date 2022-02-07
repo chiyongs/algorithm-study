@@ -1,8 +1,7 @@
 import java.util.Scanner;
 import java.util.Stack;
 
-public class Main {
-
+public class 쇠막대기5_5 {
 	public int solution(String str) {
 		Stack<Character> stack = new Stack<>();
 		int answer = 0;
@@ -28,10 +27,9 @@ public class Main {
 
 	
 	public static void main(String[] args) {
-		Main T = new Main();
+		쇠막대기5_5 T = new 쇠막대기5_5();
 		Scanner sc = new Scanner(System.in);
 		String str = sc.next();
 		System.out.println(T.solution(str));
 	}
-
 }
