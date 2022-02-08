@@ -3,8 +3,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class Main {
-
+public class 응급실5_8 {
 	public int solution(int n, int m, int[] patients) {
 		Queue<Integer> P = new LinkedList<>();
 		Queue<Integer[]> Q = new LinkedList<>();
@@ -35,7 +34,7 @@ public class Main {
 	}
 
 	public static void main(String[] args) {
-		Main T = new Main();
+		응급실5_8 T = new 응급실5_8();
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		int m = sc.nextInt();
@@ -46,5 +45,4 @@ public class Main {
 
 		System.out.println(T.solution(n, m, patients));
 	}
-
 }
