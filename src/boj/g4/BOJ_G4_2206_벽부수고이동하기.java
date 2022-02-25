@@ -13,7 +13,7 @@ import java.util.StringTokenizer;
  * @see https://www.acmicpc.net/problem/2206
  * @performance 176528	840
  * @category #BFS
- * @note
+ * @note  #벽을 부쉈는지 안부쉈는지 생각
  */
 public class BOJ_G4_2206_벽부수고이동하기 {
 
