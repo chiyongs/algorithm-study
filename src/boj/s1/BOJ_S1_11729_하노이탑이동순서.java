@@ -37,4 +37,15 @@ public class BOJ_S1_11729_하노이탑이동순서 {
 		cnt++;
 		hanoi(6-from-to,to,n-1);
 	}
+	
+	private static void hanoi2(int from, int to, int n) {
+		if(n == 0) {			
+			return;
+		}
+		
+		hanoi(from, 6-from-to, n-1);
+		sb.append(from).append(" ").append(to).append("\n");
+		cnt++;
+		hanoi(6-from-to,to,n-1);
+	}
 }
