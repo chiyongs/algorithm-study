@@ -1,9 +1,9 @@
-package programmers.bfs;
+package programmers.bfsdfs;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class PGS_BFS_단어변환 {
+public class PGS_BFSDFS_단어변환 {
 
 	static class Word {
         String value;

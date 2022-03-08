@@ -1,8 +1,8 @@
-package programmers.bfs;
+package programmers.bfsdfs;
 
 import java.util.*;
 
-public class PGS_BFS_타겟넘버 {
+public class PGS_BFSDFS_타겟넘버 {
 
 	public int solution(int[] numbers, int target) {
 		int answer = 0;
