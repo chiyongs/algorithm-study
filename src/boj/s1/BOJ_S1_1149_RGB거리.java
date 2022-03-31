@@ -15,30 +15,33 @@ import java.util.StringTokenizer;
  */
 public class BOJ_S1_1149_RGB거리 {
 
-	public static void main(String[] args) throws NumberFormatException, IOException {
+public static void main(String[] args) throws NumberFormatException, IOException {
+		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int T = Integer.parseInt(br.readLine());
-				
-		int[][] house = new int[T][3];
-		for(int t=0;t<T;t++) {
+		int n = Integer.parseInt(br.readLine());
+		int[][] houses = new int[n+1][3];
+		
+		for(int i=1;i<=n;i++) {
 			StringTokenizer st = new StringTokenizer(br.readLine()," ");
-			house[t][0] = Integer.parseInt(st.nextToken());
-			house[t][1] = Integer.parseInt(st.nextToken());
-			house[t][2] = Integer.parseInt(st.nextToken());
+			houses[i][0] = Integer.parseInt(st.nextToken());
+			houses[i][1] = Integer.parseInt(st.nextToken());
+			houses[i][2] = Integer.parseInt(st.nextToken());
 		}
 		
-		int[][] d = new int[T][3];
-		d[0][0] = house[0][0];
-		d[0][1] = house[0][1];
-		d[0][2] = house[0][2];
-		for(int i=1;i<T;i++) {
-			d[i][0] = Math.min(d[i-1][1], d[i-1][2]) + house[i][0];
-			d[i][1] = Math.min(d[i-1][0], d[i-1][2]) + house[i][1];
-			d[i][2] = Math.min(d[i-1][0], d[i-1][1]) + house[i][2];
+		int[][] d = new int[n+1][3];
+		
+		d[1][0] = houses[1][0];
+		d[1][1] = houses[1][1];
+		d[1][2] = houses[1][2];
+		
+		for(int i=2;i<=n;i++) {
+			d[i][0] = Math.min(d[i-1][1],d[i-1][2])+houses[i][0];
+			d[i][1] = Math.min(d[i-1][0],d[i-1][2])+houses[i][1];
+			d[i][2] = Math.min(d[i-1][1],d[i-1][0])+houses[i][2];
 		}
 		
-		int min = Math.min(d[T-1][0], d[T-1][1]);
-		System.out.println(Math.min(min, d[T-1][2]));
+		int min = Math.min(d[n][0], d[n][1]);
+		System.out.println(Math.min(min, d[n][2]));
 	}
 
 }
