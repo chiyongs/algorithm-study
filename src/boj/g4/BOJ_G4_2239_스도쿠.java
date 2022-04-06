@@ -11,7 +11,7 @@ import java.util.List;
  * @since 2022. 4. 6.
  * @see https://www.acmicpc.net/problem/2239
  * @performance 16392	564
- * @category #백트래킹 #시구현
+ * @category #백트래킹 #구현
  * @note
  */
 public class BOJ_G4_2239_스도쿠 {
