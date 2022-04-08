@@ -12,8 +12,7 @@ import java.util.StringTokenizer;
  * @see https://www.acmicpc.net/problem/17135
  * @performance 14648	196
  * @category #조합 #구현 #4방탐색
- * @note 미세먼지 전파가 다른 미세먼지의 초기값에 영향을 끼치지 않으려 3차원 배열을 사용했는데
- * 		 애초에 Coord에서 자신의 미세먼지 양을 가지고 있었으면 더 좋은 코드가 되었을듯하다.
+ * @note 
  */
 public class BOJ_G4_17135_캐슬디펜스 {
 
