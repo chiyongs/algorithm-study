@@ -15,7 +15,8 @@ import java.util.StringTokenizer;
  * @see https://www.acmicpc.net/problem/14502
  * @performance 124604	416
  * @category #구현 #BFS #조합
- * @note
+ * @note 벽을 세울 수 있는 세 곳을 조합을 통해 선택한 후 BFS를 진행
+ *       -> 각 분기마다 안전영역의 크기를 계산 -> 최대 값 출력
  */
 public class BOJ_G5_14502_연구소 {
 	
@@ -62,9 +63,7 @@ public class BOJ_G5_14502_연구소 {
 		
 		comb(0,0);
 		
-		System.out.println(answer);
-		
-		
+		System.out.println(answer);	
 
 	}
 	
