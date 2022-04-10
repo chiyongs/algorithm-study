@@ -16,12 +16,6 @@ import java.util.StringTokenizer;
  */
 public class BOJ_G5_14891_톱니바퀴 {
 	
-	static class Gear {
-		int[] values = new int[8];
-		int left, right;
-		
-	}
-	
 	static int[][] gears;
 
 	public static void main(String[] args) throws IOException {
