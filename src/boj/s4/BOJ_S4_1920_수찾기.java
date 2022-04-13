@@ -32,7 +32,13 @@ public class BOJ_S4_1920_수찾기 {
 		for(int i=0;i<M;i++) {
 			int num = Integer.parseInt(st.nextToken());
 			
-			System.out.println(find2(num));				
+//			find(num, start, end);	
+			
+//			System.out.println(find2(num));
+			
+			int result = Arrays.binarySearch(arr, num);
+			if(result < 0) System.out.println(0);
+			else System.out.println(1);
 		}
 
 	}
