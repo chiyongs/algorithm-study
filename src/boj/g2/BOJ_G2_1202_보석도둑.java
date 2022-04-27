@@ -10,7 +10,7 @@ import java.util.TreeMap;
 /**
  * @author chiyongs
  * @since 2022. 4. 27.
- * @see https://www.acmicpc.net/problem/7662
+ * @see https://www.acmicpc.net/problem/1202
  * @performance 131708	1232
  * @category #우선순위 큐 #TreeMap
  * @note key에 대한 갯수를 value에 담는다.
