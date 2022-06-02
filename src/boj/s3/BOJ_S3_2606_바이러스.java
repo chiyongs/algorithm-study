@@ -5,6 +5,15 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+/**
+ * @author chiyongs
+ * @since 2022. 6. 1.
+ * @see https://www.acmicpc.net/problem/2606
+ * @performance 11660	80
+ * @category #DFS #BFS
+ * @note 
+ * 		 
+ */
 public class BOJ_S3_2606_바이러스 {
 	
 	static int[][] graphs;
