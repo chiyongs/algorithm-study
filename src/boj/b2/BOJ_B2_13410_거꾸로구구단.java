@@ -1,7 +1,14 @@
 package boj.b2;
 
 import java.util.Scanner;
-
+/**
+ * @author chiyongs
+ * @since 2022. 8. 12
+ * @see https://www.acmicpc.net/problem/13410
+ * @performance 13820	124
+ * @category #완전탐색
+ * @note
+ */
 public class BOJ_B2_13410_거꾸로구구단 {
 
     public static void main(String[] args) {
