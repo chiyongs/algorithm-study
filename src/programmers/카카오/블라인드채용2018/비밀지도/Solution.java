@@ -1,4 +1,4 @@
-package programmers.카카오블라인드채용2018.비밀지도;
+package programmers.카카오.블라인드채용2018.비밀지도;
 
 class Solution {
     public String[] solution(int n, int[] arr1, int[] arr2) {
