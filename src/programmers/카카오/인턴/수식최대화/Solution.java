@@ -1,4 +1,4 @@
-package programmers.카카오인턴.수식최대화;
+package programmers.카카오.인턴.수식최대화;
 
 import java.util.*;
 
