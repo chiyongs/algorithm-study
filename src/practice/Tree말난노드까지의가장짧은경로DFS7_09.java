@@ -27,7 +27,7 @@ public class Tree말난노드까지의가장짧은경로DFS7_09 {
     }
 
     static int dfs(Node cur, int cnt) {
-        if (cur.lt == null || cur.rt == null) {
+        if (cur.lt == null && cur.rt == null) {
             return cnt;
         }
         return Math.min(dfs(cur.lt, cnt + 1), dfs(cur.rt, cnt + 1));
