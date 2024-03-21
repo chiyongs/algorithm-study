@@ -3,49 +3,55 @@ package boj.s1;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
+
 /**
  * @author chiyongs
- * @since 2022. 4. 1.
+ * @since 2024. 3. 21.
  * @see https://www.acmicpc.net/problem/12852
- * @performance 19488	108
+ * @performance 39276	136
  * @category #BFS #DP
  * @note
  */
 public class BOJ_S1_12852_1로만들기2 {
 
+	static StringBuilder sb = new StringBuilder();
+
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int n = Integer.parseInt(br.readLine());
+		int N = Integer.parseInt(br.readLine());
 
-		int[] d= new int[n+1];
-		int[] prev = new int[n+1];
-		d[1] = 0;
-				
-		for(int i=2;i<=n;i++) {
-			d[i] = d[i-1] + 1;
-			prev[i] = i-1;
-			if(i%2==0) {
-				if(d[i/2]+1<d[i]) {
-					d[i] = d[i/2] + 1;
-					prev[i] = i/2;
+		int[][] dy = new int[N+1][2];
+		for (int i=2;i<=N;i++) {
+			dy[i][0] = dy[i-1][0] + 1;
+			dy[i][1] = i-1;
+			if (i % 3 == 0) {
+				int num = dy[i/3][0] + 1;
+				if (num < dy[i][0]) {
+					dy[i][0] = num;
+					dy[i][1] = i/3;
 				}
 			}
-			if(i%3==0) {
-				if(d[i/3]+1 < d[i]) {
-					d[i] = d[i/3]+1;
-					prev[i] = i/3;
+			if (i % 2 == 0) {
+				int num = dy[i/2][0] + 1;
+				if (num < dy[i][0]) {
+					dy[i][0] = num;
+					dy[i][1] = i/2;
 				}
 			}
-			
+		}
+		System.out.println(dy[N][0]);
+		print(dy, N);
+		System.out.println(sb);
+	}
 
+	public static void print(int[][] dy, int n) {
+		if (n==1) {
+			sb.append(n);
+			return;
 		}
-		System.out.println(d[n]);
-		int cur = n;
-		while(true) {
-			System.out.print(cur+" ");
-			if(cur == 1) break;
-			cur = prev[cur];
-		}
+		sb.append(n).append(" ");
+		print(dy, dy[n][1]);
 	}
 	
 }
