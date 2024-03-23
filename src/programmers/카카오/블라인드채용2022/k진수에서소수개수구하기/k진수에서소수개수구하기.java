@@ -1,6 +1,6 @@
 package programmers.카카오.블라인드채용2022.k진수에서소수개수구하기;
 
-class k진수에서소수개수구하기 {
+public class k진수에서소수개수구하기 {
     public int solution(int n, int k) {
         int answer = 0;
         String target = createJinsu(n, k);
