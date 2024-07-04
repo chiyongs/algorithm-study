@@ -1,3 +1,5 @@
+package leetcode.recommendlist;
+
 public class IsSubsequence392 {
     public boolean isSubsequence(String s, String t) {
         int si = 0;
