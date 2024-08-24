@@ -1,3 +1,5 @@
+package leetcode.recommendlist;
+
 public class NumberOf1Bits191 {
     public int hammingWeight(int n) {
         int res = 0;
