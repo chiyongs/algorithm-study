@@ -10,8 +10,8 @@ public class ImplementQueueUsingStacks232 {
         Stack<Integer> output;
 
         public MyQueue() {
-            input = new Stack();
-            output = new Stack();
+            input = new Stack<Integer>();
+            output = new Stack<Integer>();
         }
 
         public void push(int x) {
