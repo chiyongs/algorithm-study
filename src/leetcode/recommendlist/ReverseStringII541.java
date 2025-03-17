@@ -1,4 +1,6 @@
+package leetcode.recommendlist;
 
+public class ReverseStringII541 {
     public String reverseStr(String s, int k) {
         int n = s.length();
         int startIndex = 0;
@@ -28,6 +30,7 @@
         return result;
     }
 
+
     static String reverseSubstring(String str, int k) {
         if (str.length() == 1) {
             return str;
@@ -39,3 +42,4 @@
         String remainingPart = str.substring(k);
         return reversedPart + remainingPart;
     }
+}
