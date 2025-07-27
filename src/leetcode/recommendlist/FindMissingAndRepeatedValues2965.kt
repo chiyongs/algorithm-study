@@ -1,10 +1,15 @@
 package leetcode.recommendlist
 
+fun main() {
+    val f = FindMissingAndRepeatedValues2965()
+    f.findMissingAndRepeatedValues(arrayOf(intArrayOf(1, 3), intArrayOf(2, 2)))
+}
+
 class FindMissingAndRepeatedValues2965 {
     fun findMissingAndRepeatedValues(grid: Array<IntArray>): IntArray {
         val totalSize = grid.size * grid.size
 
-        val arr = intArrayOf(totalSize+1)
+        val arr = IntArray(totalSize+1)
 
         for (array in grid) {
             for (value in array) {
@@ -12,7 +17,7 @@ class FindMissingAndRepeatedValues2965 {
             }
         }
 
-        val result = intArrayOf(2)
+        val result = IntArray(2)
         for ((idx, freq) in arr.withIndex()) {
             if (idx == 0) continue
             when (freq) {
